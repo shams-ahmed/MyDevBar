@@ -17,6 +17,17 @@ PODS:
   - AFNetworking/Reachability (2.5.0)
   - AFNetworking/Security (2.5.0)
   - AFNetworking/Serialization (2.5.0)
+  - CocoaLumberjack (2.0.0-rc):
+    - CocoaLumberjack/Default (= 2.0.0-rc)
+    - CocoaLumberjack/Extensions (= 2.0.0-rc)
+  - CocoaLumberjack/Core (2.0.0-rc)
+  - CocoaLumberjack/Default (2.0.0-rc):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0-rc):
+    - CocoaLumberjack/Default
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
   - ReactiveCocoa (2.4.4):
     - ReactiveCocoa/UI (= 2.4.4)
   - ReactiveCocoa/Core (2.4.4):
@@ -27,10 +38,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack (>= 2.0.0-rc)
+  - libextobjc/EXTScope
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  CocoaLumberjack: 6186e27827fc574b50b16c10102fcc591437f06c
+  libextobjc: d6146fce3ebea986b7f75fcb4c967639200b88b0
   ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
 
 COCOAPODS: 0.36.0.beta.1
