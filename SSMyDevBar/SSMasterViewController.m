@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.webView.frameLoadDelegate = self;
+    
     self.modelController = [[SSDatabaseController alloc] init];
     
 }
@@ -44,18 +46,32 @@
         
     }];
     
-    
-    
- 
 }
 
 - (void)viewDidAppear {
     [super viewDidAppear];
     
+    [self.webView makeTextSmaller:self];
+    [self.webView makeTextSmaller:self];
+    
 }
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
+    
+}
+
+
+#pragma mark - WebFrameDelegate
+- (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame {
+    
+}
+
+- (void)webView:(WebView *)sender didReceiveIcon:(NSImage *)image forFrame:(WebFrame *)frame {
+    
+}
+
+- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
     
 }
 
