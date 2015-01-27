@@ -369,7 +369,24 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="statusMenu" destination="veW-zf-lgU" id="eAI-md-fKe"/>
+                    </connections>
+                </customObject>
+                <menu id="veW-zf-lgU">
+                    <items>
+                        <menuItem title="Item 1" id="SFO-ER-cH0">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Item 2" id="voV-EM-tCn">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Item 3" id="ZlY-Zu-Ov5">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131" y="-311"/>

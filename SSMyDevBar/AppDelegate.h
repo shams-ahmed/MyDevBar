@@ -10,6 +10,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+/**
+ *  Status bar
+ */
+@property (weak, nonatomic) IBOutlet NSMenu *statusMenu;
+@property (strong, nonatomic) NSStatusItem *statusItem;
 
 @end
 

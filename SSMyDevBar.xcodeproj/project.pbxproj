@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05382287BCBC351F4CC0A9B1 /* libPods-SSMyDevBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DB098BB07E43353DD44782 /* libPods-SSMyDevBar.a */; };
+		D52D808A1A784CAA00432591 /* ic_fa_cogs.png in Resources */ = {isa = PBXBuildFile; fileRef = D52D80891A784CAA00432591 /* ic_fa_cogs.png */; };
 		D585F9511A68619B00D82CFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D585F9501A68619B00D82CFB /* AppDelegate.m */; };
 		D585F9531A68619B00D82CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D585F9521A68619B00D82CFB /* main.m */; };
 		D585F9551A68619B00D82CFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D585F9541A68619B00D82CFB /* Images.xcassets */; };
@@ -34,6 +35,7 @@
 		9B091255FFD3579EF183FA90 /* Pods-SSMyDevBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSMyDevBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSMyDevBar/Pods-SSMyDevBar.debug.xcconfig"; sourceTree = "<group>"; };
 		D14A8BC551C0F0832A4FCC35 /* Pods-SSMyDevBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSMyDevBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSMyDevBar/Pods-SSMyDevBar.release.xcconfig"; sourceTree = "<group>"; };
 		D1DB098BB07E43353DD44782 /* libPods-SSMyDevBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSMyDevBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52D80891A784CAA00432591 /* ic_fa_cogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_fa_cogs.png; path = Resources/ic_fa_cogs.png; sourceTree = "<group>"; };
 		D585F94A1A68619B00D82CFB /* SSMyDevBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSMyDevBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D585F94E1A68619B00D82CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D585F94F1A68619B00D82CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D52D80881A78449000432591 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D52D80891A784CAA00432591 /* ic_fa_cogs.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D585F9411A68619B00D82CFB = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 				D5D4542E1A68637F00EDD9F6 /* Views */,
 				D5D454701A6885BD00EDD9F6 /* Database */,
 				D585F9541A68619B00D82CFB /* Images.xcassets */,
+				D52D80881A78449000432591 /* Resources */,
 				D585F94D1A68619B00D82CFB /* Supporting Files */,
 			);
 			path = SSMyDevBar;
@@ -292,6 +303,7 @@
 			files = (
 				D585F9551A68619B00D82CFB /* Images.xcassets in Resources */,
 				D5D454721A6885EA00EDD9F6 /* database.plist in Resources */,
+				D52D808A1A784CAA00432591 /* ic_fa_cogs.png in Resources */,
 				D5D4546F1A68733200EDD9F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

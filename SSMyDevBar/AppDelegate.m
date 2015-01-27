@@ -13,7 +13,7 @@
 
 @property (weak) IBOutlet NSWindow *window;
 
-- (void)addConsoleLog;
+- (void)setUpStatusBar;
 
 @end
 
@@ -21,10 +21,8 @@
 
 #pragma mark - 
 #pragma mark - AppDelegate
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
- 
-    [self addConsoleLog];
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {    
+    [self setUpStatusBar];
     
 }
 
@@ -33,12 +31,14 @@
 }
 
 
-#pragma mark - Logs
-- (void)addConsoleLog {
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
-//    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+#pragma mark - Status bar
+- (void)setUpStatusBar {
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [self.statusItem setMenu:self.statusMenu];
+//    [self.statusItem setTitle:@"Dev Bar"];
+    [self.statusItem setHighlightMode:YES];
     
-    
+    [self.statusItem setImage:[NSImage imageNamed:@"ic_fa_cogs"]];
     
 }
 
