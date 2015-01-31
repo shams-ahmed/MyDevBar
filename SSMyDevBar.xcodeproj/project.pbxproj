@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05382287BCBC351F4CC0A9B1 /* libPods-SSMyDevBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DB098BB07E43353DD44782 /* libPods-SSMyDevBar.a */; };
 		D52D808A1A784CAA00432591 /* ic_fa_cogs.png in Resources */ = {isa = PBXBuildFile; fileRef = D52D80891A784CAA00432591 /* ic_fa_cogs.png */; };
+		D52D808D1A785B3500432591 /* SSStatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D808C1A785B3500432591 /* SSStatusMenuController.m */; };
 		D585F9511A68619B00D82CFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D585F9501A68619B00D82CFB /* AppDelegate.m */; };
 		D585F9531A68619B00D82CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D585F9521A68619B00D82CFB /* main.m */; };
 		D585F9551A68619B00D82CFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D585F9541A68619B00D82CFB /* Images.xcassets */; };
@@ -36,6 +37,8 @@
 		D14A8BC551C0F0832A4FCC35 /* Pods-SSMyDevBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSMyDevBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSMyDevBar/Pods-SSMyDevBar.release.xcconfig"; sourceTree = "<group>"; };
 		D1DB098BB07E43353DD44782 /* libPods-SSMyDevBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSMyDevBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52D80891A784CAA00432591 /* ic_fa_cogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_fa_cogs.png; path = Resources/ic_fa_cogs.png; sourceTree = "<group>"; };
+		D52D808B1A785B3500432591 /* SSStatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSStatusMenuController.h; sourceTree = "<group>"; };
+		D52D808C1A785B3500432591 /* SSStatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSStatusMenuController.m; sourceTree = "<group>"; };
 		D585F94A1A68619B00D82CFB /* SSMyDevBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSMyDevBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D585F94E1A68619B00D82CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D585F94F1A68619B00D82CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,7 +129,8 @@
 		D585F94C1A68619B00D82CFB /* SSMyDevBar */ = {
 			isa = PBXGroup;
 			children = (
-				D5D454321A68644B00EDD9F6 /* Applications */,
+				D585F94F1A68619B00D82CFB /* AppDelegate.h */,
+				D585F9501A68619B00D82CFB /* AppDelegate.m */,
 				D5D454301A68639C00EDD9F6 /* Models */,
 				D5D454731A68886A00EDD9F6 /* ModelControllers */,
 				D5D4542F1A68639100EDD9F6 /* Controllers */,
@@ -192,15 +196,6 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		D5D454321A68644B00EDD9F6 /* Applications */ = {
-			isa = PBXGroup;
-			children = (
-				D585F94F1A68619B00D82CFB /* AppDelegate.h */,
-				D585F9501A68619B00D82CFB /* AppDelegate.m */,
-			);
-			name = Applications;
-			sourceTree = "<group>";
-		};
 		D5D454701A6885BD00EDD9F6 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +209,8 @@
 			children = (
 				D5D454741A6889DA00EDD9F6 /* SSDatabaseController.h */,
 				D5D454751A6889DA00EDD9F6 /* SSDatabaseController.m */,
+				D52D808B1A785B3500432591 /* SSStatusMenuController.h */,
+				D52D808C1A785B3500432591 /* SSStatusMenuController.m */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -371,6 +368,7 @@
 			files = (
 				D5D454761A6889DA00EDD9F6 /* SSDatabaseController.m in Sources */,
 				D585F9531A68619B00D82CFB /* main.m in Sources */,
+				D52D808D1A785B3500432591 /* SSStatusMenuController.m in Sources */,
 				D585F9511A68619B00D82CFB /* AppDelegate.m in Sources */,
 				D5D454381A68680C00EDD9F6 /* SSMasterViewController.m in Sources */,
 				D5D454791A688B0600EDD9F6 /* SSDatabaseModel.m in Sources */,

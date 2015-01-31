@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SSStatusMenuController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
@@ -15,6 +16,26 @@
  */
 @property (weak, nonatomic) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) NSStatusItem *statusItem;
+
+/**
+ *  Manages action by status bar 
+ */
+@property (strong, nonatomic) SSStatusMenuController *statusMenuController;
+
+/**
+ *  set the status if it doesnt exist
+ *
+ *  @return SSStatusMenuController
+ */
+- (SSStatusMenuController *)attachStatusMenuController;
+
+/**
+ *  Menu action to to a controller
+ *
+ *  @param sender self
+ */
+- (IBAction)menuSelected:(id)sender;
+
 
 @end
 

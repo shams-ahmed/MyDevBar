@@ -17,8 +17,8 @@
 @implementation SSDatabaseController
 
 #pragma mark -
-#pragma mark - Init
-- (id)init {
+#pragma mark - Object
+- (instancetype)init {
     self = [super init];
     
     if (self) {

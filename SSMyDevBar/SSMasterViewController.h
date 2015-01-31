@@ -11,6 +11,9 @@
 
 @interface SSMasterViewController : NSViewController
 
+/**
+ *  main website
+ */
 @property (nonatomic, strong) IBOutlet WebView *webView;
 
 

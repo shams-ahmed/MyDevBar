@@ -9,9 +9,9 @@
 #import "SSMasterViewController.h"
 #import "SSDatabaseController.h"
 #import <ReactiveCocoa/RACEXTScope.h>
-//#import <libextobjc/EXTScope.h>
+#import "AppDelegate.h"
 
-@interface SSMasterViewController ()
+@interface SSMasterViewController () <SSStatusMenuControllerDelegate>
 
 @property (nonatomic , strong) SSDatabaseController *modelController;
 
@@ -20,13 +20,28 @@
 @implementation SSMasterViewController
 
 #pragma mark -
+#pragma mark - Object
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    
+    if (self) {
+        
+    }
+    
+    return self;
+}
+
+
 #pragma mark - Life Cycle Method
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.webView.frameLoadDelegate = self;
-    
     self.modelController = [[SSDatabaseController alloc] init];
+
+    AppDelegate *appDelegate = (AppDelegate *)[NSApplication sharedApplication].delegate;
+    SSStatusMenuController *statusMenuController = appDelegate.attachStatusMenuController;
+    statusMenuController.delegate = self;
     
 }
 
@@ -58,6 +73,41 @@
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
+    
+}
+
+
+#pragma mark - SSStatusMenuController
+- (void)SSStatusMenuController:(SSStatusMenuController *)statusMenuController didSelectItem:(NSNumber *)site {
+    switch (site.unsignedIntValue) {
+        case SSDatabasePredefinedSiteGithub:
+            
+            break;
+        case SSDatabasePredefinedSiteGitlab:
+            
+            break;
+        case SSDatabasePredefinedSiteGoogle:
+            
+            break;
+        case SSDatabasePredefinedSiteJenkins:
+            
+            break;
+        case SSDatabasePredefinedSiteJira:
+            
+            break;
+        case SSDatabasePredefinedSitePasteBoard:
+            
+            break;
+        case SSDatabasePredefinedSiteStackoverflow:
+            
+            break;
+        case SSDatabasePredefinedSiteTrello:
+            
+            break;
+        default:
+            
+            break;
+    }
     
 }
 

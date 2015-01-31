@@ -12,7 +12,7 @@
 @implementation SSDatabaseModel
 
 #pragma mark - 
-#pragma mark - Init
+#pragma mark - Object
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     

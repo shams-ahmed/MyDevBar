@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, SSDatabasePredefinedSite) {
-    SSDatabasePredefinedSiteTrello,
+    SSDatabasePredefinedSiteTrello = 0,
     SSDatabasePredefinedSiteGoogle,
     SSDatabasePredefinedSiteJira,
-    SSDatabasePredefinedSiteStackoverflow
-    
+    SSDatabasePredefinedSiteStackoverflow,
+    SSDatabasePredefinedSiteGithub,
+    SSDatabasePredefinedSiteGitlab,
+    SSDatabasePredefinedSiteJenkins,
+    SSDatabasePredefinedSitePasteBoard
 };
 
 @interface SSDatabaseModel : NSObject
