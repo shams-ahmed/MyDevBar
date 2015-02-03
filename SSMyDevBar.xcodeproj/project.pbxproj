@@ -101,6 +101,7 @@
 		D52D80881A78449000432591 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D585F9541A68619B00D82CFB /* Images.xcassets */,
 				D52D80891A784CAA00432591 /* ic_fa_cogs.png */,
 			);
 			name = Resources;
@@ -112,8 +113,8 @@
 				D585F94C1A68619B00D82CFB /* SSMyDevBar */,
 				D585F9601A68619B00D82CFB /* SSMyDevBarTests */,
 				D585F94B1A68619B00D82CFB /* Products */,
-				1392E20293DBB78833FBF3B2 /* Pods */,
 				040E5120363B03ACA307BFBE /* Frameworks */,
+				1392E20293DBB78833FBF3B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,12 +132,11 @@
 			children = (
 				D585F94F1A68619B00D82CFB /* AppDelegate.h */,
 				D585F9501A68619B00D82CFB /* AppDelegate.m */,
-				D5D454301A68639C00EDD9F6 /* Models */,
 				D5D454731A68886A00EDD9F6 /* ModelControllers */,
+				D5D454301A68639C00EDD9F6 /* Models */,
 				D5D4542F1A68639100EDD9F6 /* Controllers */,
 				D5D4542E1A68637F00EDD9F6 /* Views */,
 				D5D454701A6885BD00EDD9F6 /* Database */,
-				D585F9541A68619B00D82CFB /* Images.xcassets */,
 				D52D80881A78449000432591 /* Resources */,
 				D585F94D1A68619B00D82CFB /* Supporting Files */,
 			);

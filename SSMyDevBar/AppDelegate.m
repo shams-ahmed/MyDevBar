@@ -11,7 +11,7 @@
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property (weak, nonatomic) IBOutlet NSWindow *window;
 
 - (void)setUpStatusBar;
 
@@ -22,48 +22,63 @@
 #pragma mark - 
 #pragma mark - AppDelegate
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
-    [self setUpStatusBar];
-    [self attachStatusMenuController];
     
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [self setUpStatusBar];
+    [self attachStatusMenuController];
+   
+    self.window = [NSApp windows][0];
+    
+    [self.window setLevel:NSStatusWindowLevel];
     
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-
+    NSLog(@"App: will terminate");
+    
 }
 
 - (void)applicationWillHide:(NSNotification *)notification {
+    NSLog(@"App: will hide");
     
 }
 
 - (void)applicationDidHide:(NSNotification *)notification {
+    NSLog(@"App: did hide");
     
 }
 
 - (void)applicationWillUnhide:(NSNotification *)notification {
+    NSLog(@"App: will unhide");
     
 }
 
 - (void)applicationDidUnhide:(NSNotification *)notification {
+    NSLog(@"App: did unhide");
     
 }
 
 - (void)applicationWillBecomeActive:(NSNotification *)notification {
+    NSLog(@"App: will become active");
     
 }
 
 - (void)applicationDidBecomeActive:(NSNotification *)notification {
+    NSLog(@"App: did become active");
     
 }
 
 - (void)applicationWillResignActive:(NSNotification *)notification {
+    NSLog(@"App: will resign");
+    
+    [self.window close];
     
 }
 
 - (void)applicationDidResignActive:(NSNotification *)notification {
+    NSLog(@"App: did resign");
     
 }
 

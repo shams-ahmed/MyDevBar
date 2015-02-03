@@ -109,6 +109,12 @@
             break;
     }
     
+    /**
+     *  show main window
+     */
+    NSWindow *window = [NSApp windows][0];
+    [window orderFront:self];
+    
 }
 
 
