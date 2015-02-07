@@ -14,6 +14,7 @@
 		D585F9531A68619B00D82CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D585F9521A68619B00D82CFB /* main.m */; };
 		D585F9551A68619B00D82CFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D585F9541A68619B00D82CFB /* Images.xcassets */; };
 		D585F9641A68619B00D82CFB /* SSMyDevBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D585F9631A68619B00D82CFB /* SSMyDevBarTests.m */; };
+		D5935FE21A8187450063655E /* SSWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5935FE11A8187450063655E /* SSWebController.m */; };
 		D5D454381A68680C00EDD9F6 /* SSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D454371A68680C00EDD9F6 /* SSMasterViewController.m */; };
 		D5D4543C1A686C2100EDD9F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D4543B1A686C2100EDD9F6 /* WebKit.framework */; };
 		D5D4546F1A68733200EDD9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D4546E1A68733200EDD9F6 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		D585F95D1A68619B00D82CFB /* SSMyDevBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSMyDevBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D585F9621A68619B00D82CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D585F9631A68619B00D82CFB /* SSMyDevBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMyDevBarTests.m; sourceTree = "<group>"; };
+		D5935FE01A8187450063655E /* SSWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWebController.h; sourceTree = "<group>"; };
+		D5935FE11A8187450063655E /* SSWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSWebController.m; sourceTree = "<group>"; };
 		D5D454361A68680C00EDD9F6 /* SSMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMasterViewController.h; sourceTree = "<group>"; };
 		D5D454371A68680C00EDD9F6 /* SSMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMasterViewController.m; sourceTree = "<group>"; };
 		D5D4543B1A686C2100EDD9F6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -101,6 +104,7 @@
 		D52D80881A78449000432591 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D5D454701A6885BD00EDD9F6 /* Database */,
 				D585F9541A68619B00D82CFB /* Images.xcassets */,
 				D52D80891A784CAA00432591 /* ic_fa_cogs.png */,
 			);
@@ -136,7 +140,6 @@
 				D5D454301A68639C00EDD9F6 /* Models */,
 				D5D4542F1A68639100EDD9F6 /* Controllers */,
 				D5D4542E1A68637F00EDD9F6 /* Views */,
-				D5D454701A6885BD00EDD9F6 /* Database */,
 				D52D80881A78449000432591 /* Resources */,
 				D585F94D1A68619B00D82CFB /* Supporting Files */,
 			);
@@ -211,6 +214,8 @@
 				D5D454751A6889DA00EDD9F6 /* SSDatabaseController.m */,
 				D52D808B1A785B3500432591 /* SSStatusMenuController.h */,
 				D52D808C1A785B3500432591 /* SSStatusMenuController.m */,
+				D5935FE01A8187450063655E /* SSWebController.h */,
+				D5935FE11A8187450063655E /* SSWebController.m */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 			files = (
 				D5D454761A6889DA00EDD9F6 /* SSDatabaseController.m in Sources */,
 				D585F9531A68619B00D82CFB /* main.m in Sources */,
+				D5935FE21A8187450063655E /* SSWebController.m in Sources */,
 				D52D808D1A785B3500432591 /* SSStatusMenuController.m in Sources */,
 				D585F9511A68619B00D82CFB /* AppDelegate.m in Sources */,
 				D5D454381A68680C00EDD9F6 /* SSMasterViewController.m in Sources */,

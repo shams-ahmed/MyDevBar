@@ -10,10 +10,12 @@
 #import "SSDatabaseController.h"
 #import <ReactiveCocoa/RACEXTScope.h>
 #import "AppDelegate.h"
+#import "SSWebController.h"
 
 @interface SSMasterViewController () <SSStatusMenuControllerDelegate>
 
 @property (nonatomic , strong) SSDatabaseController *modelController;
+@property (nonatomic, strong) SSWebController *webController;
 
 @end
 
@@ -36,7 +38,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.webView.frameLoadDelegate = self;
+    self.webController = [[SSWebController alloc] init];
+    self.webView.frameLoadDelegate = self.webController;
+    
     self.modelController = [[SSDatabaseController alloc] init];
 
     AppDelegate *appDelegate = (AppDelegate *)[NSApplication sharedApplication].delegate;
@@ -114,20 +118,6 @@
      */
     NSWindow *window = [NSApp windows][0];
     [window orderFront:self];
-    
-}
-
-
-#pragma mark - WebFrameDelegate
-- (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame {
-    
-}
-
-- (void)webView:(WebView *)sender didReceiveIcon:(NSImage *)image forFrame:(WebFrame *)frame {
-    
-}
-
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
     
 }
 

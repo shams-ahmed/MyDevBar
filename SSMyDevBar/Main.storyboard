@@ -302,7 +302,7 @@
                         <outlet property="statusMenu" destination="veW-zf-lgU" id="eAI-md-fKe"/>
                     </connections>
                 </customObject>
-                <menu title="My Deb Bar" id="veW-zf-lgU" userLabel="My Dev Bar">
+                <menu title="My Dev Bar" id="veW-zf-lgU" userLabel="My Dev Bar">
                     <items>
                         <menuItem title="Trello" id="SFO-ER-cH0">
                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -371,8 +371,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES"/>
                         <rect key="contentRect" x="538" y="0.0" width="900" height="850"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
