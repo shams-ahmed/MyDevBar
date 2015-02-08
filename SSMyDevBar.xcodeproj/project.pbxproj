@@ -104,9 +104,9 @@
 		D52D80881A78449000432591 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D5C09F8E1A882D500048168C /* Icon */,
 				D5D454701A6885BD00EDD9F6 /* Database */,
 				D585F9541A68619B00D82CFB /* Images.xcassets */,
-				D52D80891A784CAA00432591 /* ic_fa_cogs.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 			children = (
 				D585F94F1A68619B00D82CFB /* AppDelegate.h */,
 				D585F9501A68619B00D82CFB /* AppDelegate.m */,
-				D5D454731A68886A00EDD9F6 /* ModelControllers */,
 				D5D454301A68639C00EDD9F6 /* Models */,
+				D5D454731A68886A00EDD9F6 /* ModelControllers */,
 				D5D4542F1A68639100EDD9F6 /* Controllers */,
 				D5D4542E1A68637F00EDD9F6 /* Views */,
 				D52D80881A78449000432591 /* Resources */,
@@ -171,6 +171,14 @@
 				D585F9621A68619B00D82CFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5C09F8E1A882D500048168C /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				D52D80891A784CAA00432591 /* ic_fa_cogs.png */,
+			);
+			name = Icon;
 			sourceTree = "<group>";
 		};
 		D5D4542E1A68637F00EDD9F6 /* Views */ = {

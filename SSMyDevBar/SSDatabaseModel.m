@@ -40,6 +40,18 @@
         case SSDatabasePredefinedSiteTrello:
             
             return [NSURL URLWithString:self.dictionary[@"Trello"]];
+        case SSDatabasePredefinedSiteGithub:
+            
+            return [NSURL URLWithString:self.dictionary[@"Github"]];
+        case SSDatabasePredefinedSiteGitlab:
+            
+            return [NSURL URLWithString:self.dictionary[@"Gitlab"]];
+        case SSDatabasePredefinedSiteJenkins:
+            
+            return [NSURL URLWithString:self.dictionary[@"Jenkins"]];
+        case SSDatabasePredefinedSitePasteBoard:
+            
+            return [NSURL URLWithString:self.dictionary[@"PasteBoard"]];
         default:
             
             return nil;

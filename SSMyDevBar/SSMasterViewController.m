@@ -52,6 +52,7 @@
 - (void)viewWillAppear {
     [super viewWillAppear];
     
+    
     @weakify(self);
     [[self.modelController startParsing] subscribeError:^(NSError *error) {
         NSLog(@"Could not parse the plist file");
@@ -70,6 +71,9 @@
 - (void)viewDidAppear {
     [super viewDidAppear];
     
+    /**
+     *  make the web view smaller
+     */
     [self.webView makeTextSmaller:self];
     [self.webView makeTextSmaller:self];
     
@@ -83,6 +87,8 @@
 
 #pragma mark - SSStatusMenuController
 - (void)SSStatusMenuController:(SSStatusMenuController *)statusMenuController didSelectItem:(NSNumber *)site {
+    NSLog(@"selected: %u", (uint)site);
+    
     switch (site.unsignedIntValue) {
         case SSDatabasePredefinedSiteGithub:
             

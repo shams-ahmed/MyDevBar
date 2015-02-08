@@ -26,31 +26,19 @@
 
 #pragma mark - WebFrameDelegate
 - (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame {
-    NSLog(@"webView: start provisional load");
     
 }
 
 - (void)webView:(WebView *)sender didReceiveIcon:(NSImage *)image forFrame:(WebFrame *)frame {
-    NSLog(@"webView: got icon");
     
 }
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
-    NSLog(@"webView: finished load");
+
 }
 
 - (void)webView:(WebView *)sender didReceiveServerRedirectForProvisionalLoadForFrame:(WebFrame *)frame {
     NSLog(@"webView: server redirect");
-}
-
-- (void)webView:(WebView *)sender didCommitLoadForFrame:(WebFrame *)frame {
-    NSLog(@"webView: commit load");
-    
-}
-
-- (void)webView:(WebView *)sender didReceiveTitle:(NSString *)title forFrame:(WebFrame *)frame {
-    NSLog(@"webView: got title");
-    
 }
 
 - (void)webView:(WebView *)sender didFailLoadWithError:(NSError *)error forFrame:(WebFrame *)frame {
@@ -79,7 +67,7 @@
 }
 
 - (void)webView:(WebView *)webView didCreateJavaScriptContext:(JSContext *)context forFrame:(WebFrame *)frame {
-    NSLog(@"webView: created js context");
+
     
 }
 

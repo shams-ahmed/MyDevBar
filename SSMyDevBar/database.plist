@@ -5,12 +5,18 @@
 	<key>Trello</key>
 	<string>https://trello.com</string>
 	<key>Jira</key>
-	<string>https://atlassian.com/</string>
+	<string>https://simplifydigital.atlassian.net/secure/RapidBoard.jspa?rapidView=61&amp;quickFilter=143</string>
 	<key>Stackoverflow</key>
-	<string>http://stackoverflow.com/unanswered/tagged/ios+iphone+objective-c+xcode+ipad+uiwebview+cocoa-touch+ios5+uiview+xcode4+ios6+uiviewcontroller+SANetworkTester+SAStepperControl+SAScrollTableViewCell</string>
+	<string>https://stackoverflow.com/unanswered/tagged/ios+iphone+objective-c+xcode+ipad+uiwebview+cocoa-touch+ios5+uiview+xcode4+ios6+uiviewcontroller+SANetworkTester+SAStepperControl+SAScrollTableViewCell</string>
 	<key>Google</key>
-	<string>http://google.com</string>
+	<string>https://google.co.uk</string>
 	<key>Github</key>
-	<string>https://github.com/</string>
+	<string>https://github.com</string>
+	<key>Gitlab</key>
+	<string>https://google.co.uk</string>
+	<key>Jenkins CI</key>
+	<string>https://google.co.uk</string>
+	<key>Pasteboard</key>
+	<string>https://google.co.uk</string>
 </dict>
 </plist>
