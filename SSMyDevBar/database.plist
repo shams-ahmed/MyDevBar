@@ -13,9 +13,9 @@
 	<key>Github</key>
 	<string>https://github.com</string>
 	<key>Gitlab</key>
-	<string>https://google.co.uk</string>
+	<string>http://172.30.40.170/fusion/voltz-ios</string>
 	<key>Jenkins CI</key>
-	<string>https://google.co.uk</string>
+	<string>http://ci.devops.simplifydigital.co.uk:8080</string>
 	<key>Pasteboard</key>
 	<string>https://google.co.uk</string>
 </dict>

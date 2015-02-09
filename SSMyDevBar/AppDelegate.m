@@ -41,7 +41,6 @@
 }
 
 - (void)applicationWillHide:(NSNotification *)notification {
-    NSLog(@"App: will hide");
     
 }
 
@@ -51,7 +50,6 @@
 }
 
 - (void)applicationWillUnhide:(NSNotification *)notification {
-    NSLog(@"App: will unhide");
     
 }
 
@@ -61,7 +59,6 @@
 }
 
 - (void)applicationWillBecomeActive:(NSNotification *)notification {
-    NSLog(@"App: will become active");
     
 }
 
@@ -71,7 +68,6 @@
 }
 
 - (void)applicationWillResignActive:(NSNotification *)notification {
-    NSLog(@"App: will resign");
     
     [self.window close];
     
