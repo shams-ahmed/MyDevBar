@@ -47,6 +47,8 @@
     SSStatusMenuController *statusMenuController = appDelegate.attachStatusMenuController;
     statusMenuController.delegate = self;
     
+    [self addKeyboardListener];
+    
 }
 
 - (void)viewWillAppear {
@@ -147,6 +149,30 @@
      */
     NSWindow *window = [NSApp windows][0];
     [window orderFront:self];
+    
+}
+
+
+#pragma mark - keyboard listener
+- (void)addKeyboardListener {
+    @weakify(self);
+    
+    /**
+     *  reload
+     */
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask
+                                          handler:^(NSEvent *event)
+    {
+        @strongify(self);
+        NSLog(@"%u", event.keyCode);
+
+        if ([event modifierFlags] & NSCommandKeyMask && event.keyCode == 15) {
+            [self.webView reload:nil];
+            
+        }
+
+        return event;
+    }];
     
 }
 
