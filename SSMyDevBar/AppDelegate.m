@@ -31,7 +31,7 @@
    
     self.window = [NSApp windows][0];
     
-    [self.window setLevel:NSStatusWindowLevel];
+//    [self.window setLevel:NSStatusWindowLevel];
     
 }
 
@@ -68,7 +68,6 @@
 }
 
 - (void)applicationWillResignActive:(NSNotification *)notification {
-    
     [self.window close];
     
 }

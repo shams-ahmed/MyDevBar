@@ -69,6 +69,11 @@
         
     }
     
+    /**
+     *  bring to front of screen
+     */
+    [[NSApp windows][0] orderFrontRegardless];
+    
 }
 
 
