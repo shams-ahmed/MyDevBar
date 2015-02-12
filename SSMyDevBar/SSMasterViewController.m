@@ -164,16 +164,37 @@
                                           handler:^(NSEvent *event)
     {
         @strongify(self);
-        NSLog(@"%u", event.keyCode);
 
-        if ([event modifierFlags] & NSCommandKeyMask && event.keyCode == 15) {
-            [self.webView reload:nil];
+        if (event.modifierFlags & NSCommandKeyMask) {
+            switch (event.keyCode) {
+                case 15: // reload
+                    [self.webView reload:nil];
+                    
+                    break;
+                case 124: // right
+                    [self.webView goForward];
+                    
+                    break;
+                case 123: // left
+                    [self.webView goBack];
+                    
+                    break;
+                case 126: // up
+                    
+                    break;
+                case 125: // down
+                    
+                    break;
+                default:
+                    
+                    break;
+            }
             
         }
-
+        
         return event;
     }];
-    
+
 }
 
 

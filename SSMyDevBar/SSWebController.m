@@ -67,7 +67,6 @@
 }
 
 - (void)webView:(WebView *)webView didCreateJavaScriptContext:(JSContext *)context forFrame:(WebFrame *)frame {
-
     
 }
 
