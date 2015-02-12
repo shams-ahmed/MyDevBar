@@ -16,6 +16,7 @@
 
 @property (nonatomic , strong) SSDatabaseController *modelController;
 @property (nonatomic, strong) SSWebController *webController;
+@property (nonatomic, strong) NSMutableURLRequest *request;
 
 @end
 
@@ -40,6 +41,11 @@
     
     self.webController = [[SSWebController alloc] init];
     self.webView.frameLoadDelegate = self.webController;
+    self.webView.shouldUpdateWhileOffscreen = YES;
+    self.webView.drawsBackground = YES;
+    
+    self.request = [[NSMutableURLRequest alloc] init];
+    self.request.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
     
     self.modelController = [[SSDatabaseController alloc] init];
 
@@ -63,9 +69,9 @@
         @strongify(self);
         
         if (!self.webView.mainFrameURL) {
-            NSURL *url = [self.modelController.model urlFor:SSDatabasePredefinedSiteTrello];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteTrello];
             
-            [self.webView.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
+            [self.webView.mainFrame loadRequest:self.request];
             
         }
         
@@ -93,62 +99,54 @@
 
 #pragma mark - SSStatusMenuController
 - (void)SSStatusMenuController:(SSStatusMenuController *)statusMenuController didSelectItem:(NSNumber *)site {
-    NSLog(@"selected: %u", (uint)site);
-    
-    NSURL *url;
-    
     switch (site.unsignedIntValue) {
         case SSDatabasePredefinedSiteGithub:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteGithub];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteGithub];
             
             break;
         case SSDatabasePredefinedSiteGitlab:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteGitlab];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteGitlab];
             
             break;
         case SSDatabasePredefinedSiteGoogle:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteGoogle];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteGoogle];
             
             break;
         case SSDatabasePredefinedSiteJenkins:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteJenkins];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteJenkins];
             
             break;
         case SSDatabasePredefinedSiteJira:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteJira];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteJira];
             
             break;
         case SSDatabasePredefinedSitePasteBoard:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSitePasteBoard];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSitePasteBoard];
             
             break;
         case SSDatabasePredefinedSiteStackoverflow:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteStackoverflow];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteStackoverflow];
             
             break;
         case SSDatabasePredefinedSiteTrello:
-            url = [self.modelController.model urlFor:SSDatabasePredefinedSiteTrello];
+            self.request.URL = [self.modelController.model urlFor:SSDatabasePredefinedSiteTrello];
             
             break;
         default:
             
             break;
     }
-   
-//    [self.webView.mainFrame.frameView.documentView scaleUnitSquareToSize:NSMakeSize(1.5, 1.5)];
-//    [self.webView.mainFrame.frameView.documentView setNeedsDisplay:YES];
     
     /**
      *  load new request
      */
-    [self.webView.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
+    [self.webView.mainFrame loadRequest:self.request];
     
     
     /**
      *  show main window
      */
-    NSWindow *window = [NSApp windows][0];
-    [window orderFront:self];
+    [(NSWindow *)[NSApp windows][0] orderFront:self];
     
 }
 
