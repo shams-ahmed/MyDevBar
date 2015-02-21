@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SSMasterViewController.h"
+#import <MASShortcut/Shortcut.h>
 
 @interface AppDelegate ()
 
@@ -30,8 +31,6 @@
     [self attachStatusMenuController];
    
     self.window = [NSApp windows][0];
-    
-//    [self.window setLevel:NSStatusWindowLevel];
     
 }
 
@@ -84,6 +83,16 @@
         self.statusMenuController = [[SSStatusMenuController alloc] init];
 
     }
+    
+    
+    // Create a shortcut from the event
+    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:46 modifierFlags:NSCommandKeyMask];
+    
+    [[MASShortcutMonitor sharedMonitor] registerShortcut:shortcut withAction:^{
+        NSLog(@"done");
+        
+    }];
+    
     
     return self.statusMenuController;
 }
