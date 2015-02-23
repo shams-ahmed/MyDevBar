@@ -140,6 +140,7 @@
 				D5D454731A68886A00EDD9F6 /* ModelControllers */,
 				D5D4542F1A68639100EDD9F6 /* Controllers */,
 				D5D4542E1A68637F00EDD9F6 /* Views */,
+				D58A39561A98AFAA00BA6D58 /* Library */,
 				D52D80881A78449000432591 /* Resources */,
 				D585F94D1A68619B00D82CFB /* Supporting Files */,
 			);
@@ -171,6 +172,14 @@
 				D585F9621A68619B00D82CFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D58A39561A98AFAA00BA6D58 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D5C09F8E1A882D500048168C /* Icon */ = {
@@ -218,12 +227,12 @@
 		D5D454731A68886A00EDD9F6 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D5935FE01A8187450063655E /* SSWebController.h */,
+				D5935FE11A8187450063655E /* SSWebController.m */,
 				D5D454741A6889DA00EDD9F6 /* SSDatabaseController.h */,
 				D5D454751A6889DA00EDD9F6 /* SSDatabaseController.m */,
 				D52D808B1A785B3500432591 /* SSStatusMenuController.h */,
 				D52D808C1A785B3500432591 /* SSStatusMenuController.m */,
-				D5935FE01A8187450063655E /* SSWebController.h */,
-				D5935FE11A8187450063655E /* SSWebController.m */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
