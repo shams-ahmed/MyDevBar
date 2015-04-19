@@ -1,5 +1,5 @@
 # MyDevBar
-Quickly access some of your comman tools such as Trello, Jira, Github, Stackoverflow, Google from the status bar or shortcut on Mac OSX.
+Quickly access common tools such as Trello, Jira, Github, Stackoverflow from the status bar!
 
 
 ## Motivation
